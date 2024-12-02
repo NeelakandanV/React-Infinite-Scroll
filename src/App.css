@@ -1,0 +1,56 @@
+.MainParent{
+    margin: 2px;
+}
+
+h2{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.Content{
+    margin: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card{
+    border: 2px solid black;
+    border-radius: 15px;
+    height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: larger;
+    font-weight: 600;
+    background-color: cadetblue;
+    z-index: 1;
+}
+
+.Loading{
+    position: relative;
+    height: 400px;
+    width: 300px;
+    font-size: larger;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    background-color: cadetblue;
+    border-radius: 15px;
+}
+
+@media only screen and(max-width:600px){
+    .card{
+        height: 200px;
+        width: 160px;
+    }
+    .Loading{
+        height: 200px;
+        width: 160px; 
+    }
+}
